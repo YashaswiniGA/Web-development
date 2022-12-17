@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave application</title>
+<link rel="stylesheet" href="./Styles/stylesheet1.css">
+<link rel="icon" href="./Images/favicon.ico">
+</head>
+<body>
+<div class="main1">
+  <center>  <img src="./Images/BMS_College_of_Engineering.svg.png" alt="B.M.S" height="120px" width="120px"></center>
+<h1 >B.M.S. COLLEGE OF ENGINEERING</h1>
+<h4>ESTD. 1946 Autonomous Institute, Affiliated to VTU</h4>
+<h2>Leave application</h2>
+</div>
+<div class="main2"> 
+    <div class="dropdown"> 
+<a href="file:///C:/Webdevelopment/2nd%20page.html">
+    <button class="dropbtn" > HOME</button></a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">
+            Profile
+        </button>
+        <div class="dropdown-content">
+            <a href="#">
+               <center> <img src="./Images/profile picture.png"></center>
+             </a>
+             <p style="color: #008080; font-size: medium;" >Emp ID</p>
+             <p style="font-size: medium;"> Faculty Name</p>
+             <p style="font-size: small;"> Teaher</p>
+             <hr>
+            <a href="file:///C:/Webdevelopment/create%20account.html"><img src="./Images/change password.png" height="15px">
+                Change password</a>
+            <a href="file:///C:/Webdevelopment/1st%20page.html?email=yashaswini7122003%40gmail.com&password=abcder">
+                <img src="./Images/sign out.png" height="15px">
+                 Sign out</a>
+            
+        </div>
+        </div>
+</div>
+
+<form name="leaveapplicationform" onsubmit="validate()">
+    <center>
+<table>   
+    <tbody>
+    
+    <tr>
+    <td><p>Choose the type of leave :</p></td>
+    <td><input type="radio" name="cl or rh" value="cl"> CL
+    <input type="radio" name="cl or rh" value="rh"> RH</td>
+</tr>
+
+<tr>
+    <td><label for="name"> Name : </label></td>
+    <td><input type="text" name="name" id="name" required placeholder="Enter your fullname." style="width:150%; height:3em; border-radius: 3px;"/></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td><label for="name"> Division : </label></td>
+    <td><input type="text" name="division" id="division" required placeholder="Enter your division." style="width:150%; height:3em; border-radius: 3px;"/></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td><label for="designation"> Designation : </label></td>
+    <td><input type="text" name="designation" id="designation" required placeholder="Enter your Designation."style="width:150%; height:3em; border-radius:3px;"/></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+   <td> <label for="number of days"> Total number of days : </label></td>
+   <td> <input type="number" required name="number of days" id="number of days"style="width:150%; height:3em;  border-radius:3px;"/></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    
+   <td> <label for="leave from">Date From :</label></td>
+   <td> <input type="date" required name="leave from" id="leave from" style="width:150%; height:3em;  border-radius:3px;"/></td>
+    
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+   <td> <label for="leave to"> To :</label></td>
+    <td><input type="date" required name="leave to" id="leave to" style="width:150%; height:3em;  border-radius:3px;"/></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+  <td> <label for="reason"> Reason :</label></td> 
+  <td>  <textarea required rows="2" cols="40" style="width: 150%; height: 3em; border-radius:3px;"></textarea></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td><label for="alternatives"> Alternative arrangements :</label></td>
+    <td><textarea rows="2" cols="40"  style="width: 150%; height: 3em; border-radius:3px;"></textarea></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td><input type="submit" value="SUBMIT" id="submitbutton"></td>
+</tr>
+
+</tbody>   
+</table>
+</center>
+</form>
+
+
+<script src="./java script/script2.js"></script>
+</body>
+</html>

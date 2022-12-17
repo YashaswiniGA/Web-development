@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylecss.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+<style>
+body{
+  height: 100vh;
+  /* display: flex;
+   justify-content: center;
+  align-items: center;  */
+  padding: 10px;
+  background: linear-gradient(135deg, #0b6568, #008080);
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+ 
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+ 
+ form .button{
+   height: 45px;
+   margin: 35px ;
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+  
+ }
+
+  
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  }
+</style>
+</head>
+<body>
+    <center><img src="./Images/BMS_College_of_Engineering.svg.png" alt="B.M.S" height="120px" width="120px"></center> 
+ <h1 style="text-align: center; color: white;" >B.M.S. COLLEGE OF ENGINEERING</h1>
+ <h4 style="text-align: center; color: white;">ESTD. 1946 Autonomous Institute, Affiliated to VTU</h4>
+ <h2 style="text-align: center; color: white;">Leave approval</h2>
+  <center>    
+  <div class="container">
+    
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#"  name="createaccountform" onsubmit="validate()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" id="Fname" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" id="Lname" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Employee Id</span>
+            <input type="text" id="empid" placeholder="Enter your Id" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" id="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" id="password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        
+        </div>
+        <div class="button">
+         <a href="file:///C:/Webdevelopment/1st%20page.html"> <input type="button" value="Submit" style="cursor: pointer;"></a>
+        </div>
+      </form>
+    </div>
+  </div>
+</center>
+
+<script src="./java script/script3.js"></script>
+</body>
+</html>
